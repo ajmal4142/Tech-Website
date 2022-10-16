@@ -2,12 +2,7 @@ import { Grid, Typography, Button } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { mainBodyThree, bodyFour } from "../styles";
-import { useMediaQuery } from "@mui/material";
 const MainBodyThree = () => {
-  const media = useMediaQuery("(max-width:1000px)");
-  const hey = useMediaQuery("(max-width:600px)");
-  const there = useMediaQuery("(max-width:400px)");
-
   return (
     <>
       <Grid
@@ -19,26 +14,9 @@ const MainBodyThree = () => {
         sx={mainBodyThree.one}
       >
         <Box m={2} sx={mainBodyThree.two}>
-          {media && (
-            <>
-              <Typography variant="h6" sx={mainBodyThree.five}>
-                We Provide Digital Services
-              </Typography>
-              <Typography variant="h6" sx={mainBodyThree.seven}>
-                We Provide
-              </Typography>
-            </>
-          )}
-          {there && (
-            <Typography variant="h6" sx={mainBodyThree.seven}>
-              We Provide
-            </Typography>
-          )}
-          {hey && (
-            <Typography variant="h6" sx={mainBodyThree.five}>
-              We Provide Digital
-            </Typography>
-          )}
+          <Typography variant="h6" sx={mainBodyThree.five}>
+            We Provide Digital Services
+          </Typography>
 
           <Typography sx={mainBodyThree.four}>
             Serives we're Offering
@@ -54,6 +32,7 @@ const MainBodyThree = () => {
             component="img"
             src="https://media.istockphoto.com/photos/colleagues-discussing-over-digital-tablet-picture-id498323251?k=20&m=498323251&s=612x612&w=0&h=sdJebPUxqVOAPUxmG0inV3RJqy4tbmzg6yiIotNaNxY="
             sx={mainBodyThree.threee}
+            display={{ xs: "none", sm: "flex", md: "flex" }}
           />
 
           <Typography sx={mainBodyThree.six}>

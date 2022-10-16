@@ -21,7 +21,7 @@ const MainBodyTwo = () => {
             Website Developement
           </Typography>
           <Typography sx={mainBodyTwo.five}>
-            Web developers create and maintain websites. They are also
+            Web developers create and maintain websites. <br></br> They are also
             responsible for the site's technical aspects.
           </Typography>
           <Button sx={bodyFour.four}>Read More</Button>
@@ -37,8 +37,7 @@ const MainBodyTwo = () => {
           </Typography>
           <Typography sx={mainBodyTwo.five}>
             The point of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it
+            distribution of letters, as opposed to using 'Content here.
           </Typography>
           <Button sx={bodyFour.four}>Read More</Button>
         </Box>
@@ -52,8 +51,9 @@ const MainBodyTwo = () => {
             Application Developement
           </Typography>
           <Typography sx={mainBodyTwo.five}>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            It is a long established fact that a reader will be distracted{" "}
+            <br></br> By the readable content of a page when looking at its
+            layout.
           </Typography>
           <Button sx={bodyFour.four}>Read More</Button>
         </Box>

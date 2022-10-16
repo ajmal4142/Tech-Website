@@ -1,6 +1,6 @@
 import { Button, Typography, Box } from "@mui/material";
+import { Link } from "react-router-dom";
 import { Container } from "@mui/system";
-import { useMediaQuery } from "@mui/material";
 import React from "react";
 import { footer } from "./styles";
 import ContactsIcon from "@mui/icons-material/Contacts";
@@ -9,7 +9,6 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
-  const isMediaOne = useMediaQuery("(max-width:600)");
   return (
     <>
       <Box sx={footer.one}>
@@ -44,8 +43,10 @@ const Footer = () => {
           <Typography href="#" variant="h6" sx={footer.four}>
             Links
           </Typography>
-          <Button href="#" sx={footer.six}>
-            Our Services
+          <Button sx={footer.about}>
+            <Link to="/About" p={0}>
+              About
+            </Link>
           </Button>
           <Button href="#" sx={footer.six}>
             Our Team
@@ -63,14 +64,16 @@ const Footer = () => {
             Privacy Policy
           </Button>
         </Container>
-        <Box sx={footer.two} display={{ xs: "none", sm: "flex", md: "flex" }}>
-          <Typography variant="h6" sx={footer.four}>
-            Socials
-          </Typography>
-          <Box sx={footer.seven}>
-            <FacebookIcon />
-            <WhatsAppIcon />
-            <InstagramIcon />
+        <Box display={{ xs: "none", sm: "flex", md: "flex" }}>
+          <Box sx={footer.two}>
+            <Typography variant="h6" sx={footer.four}>
+              Socials
+            </Typography>
+            <Box sx={footer.seven}>
+              <FacebookIcon />
+              <WhatsAppIcon />
+              <InstagramIcon />
+            </Box>
           </Box>
         </Box>
       </Box>

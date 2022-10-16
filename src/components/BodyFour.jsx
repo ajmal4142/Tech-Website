@@ -5,7 +5,13 @@ const BodyFour = () => {
   return (
     <>
       <div style={bodyFour.two}>
-        <div style={{ width: "60%", marginTop: "5rem", display: "flex" }}>
+        <div
+          style={{
+            width: "60%",
+            marginTop: "5rem",
+            display: "flex",
+          }}
+        >
           <div
             style={{
               width: "50%",

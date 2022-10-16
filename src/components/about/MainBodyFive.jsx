@@ -45,7 +45,7 @@ const MainBodyFive = () => {
         <Box m={2} sx={mainBodyFive.two}>
           <Box
             component="img"
-            src="https://www.oracle.com/a/ocom/img/cb125v4-career-ops-corporate-functions.jpg"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/O2019-Hero-image-x2:VP1-539x440?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&hei=720&qlt=75&fit=constrain"
             sx={mainBodyFive.three}
           />
           <Typography variant="h6" sx={mainBodyFive.four}>

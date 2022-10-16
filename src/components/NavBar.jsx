@@ -43,9 +43,11 @@ const NavBar = () => {
             <Button href="#" sx={{ color: "#3B312F", ml: "2%" }}>
               Services
             </Button>
-            <Button href="#" sx={{ color: "#3B312F", ml: "1%" }}>
-              Prices
-            </Button>
+            <Box display={{ xs: "none", sm: "none", md: "flex" }}>
+              <Button href="#" sx={{ color: "#3B312F", ml: "1%" }}>
+                Prices
+              </Button>
+            </Box>
             <Box display={{ xs: "none", sm: "none", md: "flex" }}>
               <Button href="#" sx={{ color: "#3B312F", ml: "1%" }}>
                 Contacts

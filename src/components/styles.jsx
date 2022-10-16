@@ -169,6 +169,7 @@ export const bodyFour = {
     background: "white",
     display: "flex",
     justifyContent: "center",
+    paddingBottom: "5rem",
   },
   three: {
     fontSize: 40,
@@ -210,6 +211,7 @@ export const bodyFive = {
     display: "flex",
     flexDirection: "column",
     mt: 8,
+    mb: "70px",
   },
   two: {
     width: "75%",
@@ -468,15 +470,30 @@ export const footer = {
     display: "flex",
     justifyContent: "center",
   },
+  about: {
+    "a:-webkit-any-link": {
+      color: "#E0E7E0",
+      cursor: "pointer",
+      textDecoration: "none",
+      paddingTop: 0.1,
+      p: 0,
+      m: 0,
+      mt: 0,
+      fontFamily: "system-ui",
+      textTransform: "none",
+
+      ml: " -16",
+      width: 120,
+      textAlign: "end",
+    },
+  },
   two: {
     width: "13%",
     display: "flex",
     flexDirection: "column",
     color: "#E0E7E0",
     mt: 6.5,
-    xs: "none",
-    sm: "flex",
-    md: "flex",
+    ml: 0,
   },
   twoTwo: {
     width: "15%",
@@ -552,7 +569,7 @@ export const mainBodyOne = {
     display: "flex",
     textAlign: "center",
 
-    backgroundSize: "cover%",
+    backgroundSize: "cover",
   },
   two: {
     fontWeight: 900,
@@ -576,6 +593,7 @@ export const mainBodyTwo = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    mb: 6,
   },
   three: {
     width: 300,
@@ -617,13 +635,15 @@ export const mainBodyThree = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    mb: 5,
   },
   three: {
-    mt: 2,
-    width: 400,
+    mt: 4,
+    width: "70%",
     height: 400,
     objectFit: "cover",
   },
+
   threee: {
     mt: 2,
     width: 500,
