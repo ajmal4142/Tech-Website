@@ -46,43 +46,46 @@ const BodyTwo = () => {
                 <br /> Lorem ipsum may be used as a placeholder before final
                 copy is available.
               </Typography>
-              <Box>
+              <Box display={{ xs: "none", sm: "none", md: "flex" }}>
                 <Button href="#" sx={bodyboxOne.bottonTwo}>
                   Read More
                 </Button>
               </Box>
             </div>
           </div>
-          <div style={bodyboxOne.divDecor}>
-            <div style={bodyboxOne.decor}>
-              <Typography variant="h6" sx={{ fontSize: 13 }}>
-                People
-              </Typography>
-              <Typography
-                variant="h3"
-                sx={{ fontSize: 30, mt: 2, fontWeight: 900 }}
-              >
-                251+
-              </Typography>
-              <Typography variant="h6" sx={{ fontSize: 13, mt: 2 }}>
-                In publishing and graphic.
-              </Typography>
+          <Box display={{ xs: "none", sm: "none", md: "flex" }}>
+            <div style={bodyboxOne.divDecor}>
+              <div style={bodyboxOne.decor}>
+                <Typography variant="h6" sx={{ fontSize: 13 }}>
+                  People
+                </Typography>
+                <Typography
+                  variant="h3"
+                  sx={{ fontSize: 30, mt: 2, fontWeight: 900 }}
+                >
+                  251+
+                </Typography>
+                <Typography variant="h6" sx={{ fontSize: 13, mt: 2 }}>
+                  In publishing and graphic.
+                </Typography>
+              </div>
+
+              <div style={bodyboxOne.decor}>
+                <Typography variant="h6" sx={{ fontSize: 13 }}>
+                  World Offices
+                </Typography>
+                <Typography
+                  variant="h3"
+                  sx={{ fontSize: 30, mt: 2, fontWeight: 900 }}
+                >
+                  12
+                </Typography>
+                <Typography variant="h6" sx={{ fontSize: 13, mt: 2 }}>
+                  Lorem ipsum may be used.
+                </Typography>
+              </div>
             </div>
-            <div style={bodyboxOne.decor}>
-              <Typography variant="h6" sx={{ fontSize: 13 }}>
-                World Offices
-              </Typography>
-              <Typography
-                variant="h3"
-                sx={{ fontSize: 30, mt: 2, fontWeight: 900 }}
-              >
-                12
-              </Typography>
-              <Typography variant="h6" sx={{ fontSize: 13, mt: 2 }}>
-                Lorem ipsum may be used.
-              </Typography>
-            </div>
-          </div>
+          </Box>
         </div>
       </div>
     </>

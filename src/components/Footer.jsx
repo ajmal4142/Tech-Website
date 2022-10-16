@@ -1,5 +1,6 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, Box } from "@mui/material";
 import { Container } from "@mui/system";
+import { useMediaQuery } from "@mui/material";
 import React from "react";
 import { footer } from "./styles";
 import ContactsIcon from "@mui/icons-material/Contacts";
@@ -7,27 +8,32 @@ import DialpadIcon from "@mui/icons-material/Dialpad";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 const Footer = () => {
+  const isMediaOne = useMediaQuery("(max-width:600)");
   return (
     <>
-      <Container maxWidth="100%" sx={footer.one}>
-        <Container sx={footer.two}>
-          <Typography variant="h3" sx={footer.three}>
-            LOGO
-          </Typography>
-          <Container sx={{ height: "70%" }}></Container>
-          <Typography sx={{ fontSize: 13 }}>
-            Logo@2022 ,All Rights Reserved
-          </Typography>
-        </Container>
+      <Box sx={footer.one}>
+        <Box display={{ xs: "none", sm: "flex", md: "flex" }}>
+          <Container sx={footer.two}>
+            <Typography variant="h3" sx={footer.three}>
+              LOGO
+            </Typography>
+
+            <Container sx={{ height: "70%" }}></Container>
+
+            <Typography sx={{ fontSize: 13 }}>
+              Logo@2022 ,All Rights Reserved
+            </Typography>
+          </Container>
+        </Box>
+
         <Container sx={footer.two}>
           <Typography variant="h6" sx={footer.four}>
             Main Office
           </Typography>
           <Typography variant="h6" sx={footer.five}>
             <ContactsIcon sx={{ fontSize: 14 }} />
-            <Typography sx={{ ml: 1, fontSize: 12 }}>ADDRESS 1</Typography>
+            <Typography sx={{ ml: 1, fontSize: 12 }}>ADDRESS </Typography>
           </Typography>
           <Typography variant="h6" sx={footer.five}>
             <DialpadIcon sx={{ fontSize: 14 }} />
@@ -36,7 +42,7 @@ const Footer = () => {
         </Container>
         <Container sx={footer.two}>
           <Typography href="#" variant="h6" sx={footer.four}>
-            Usefull Links
+            Links
           </Typography>
           <Button href="#" sx={footer.six}>
             Our Services
@@ -57,18 +63,17 @@ const Footer = () => {
             Privacy Policy
           </Button>
         </Container>
-        <Container sx={footer.two}>
+        <Box sx={footer.two} display={{ xs: "none", sm: "flex", md: "flex" }}>
           <Typography variant="h6" sx={footer.four}>
             Socials
           </Typography>
-          <Container sx={footer.seven}>
+          <Box sx={footer.seven}>
             <FacebookIcon />
             <WhatsAppIcon />
             <InstagramIcon />
-            <YouTubeIcon />
-          </Container>
-        </Container>
-      </Container>
+          </Box>
+        </Box>
+      </Box>
     </>
   );
 };

@@ -1,11 +1,16 @@
 export const style1 = {
   paperContainer: {
-    backgroundImage: `url(${"https://pembuatanvideo.com/wp-content/uploads/2021/07/Tahapan-pembuatan-video-company-profile_eps-production.jpg"})`,
-    height: 550,
+    position: "static",
+    top: 0,
+    left: 0,
+    backgroundImage: `url(${"https://media.istockphoto.com/photos/global-communication-network-concept-worldwide-business-picture-id1169668336?k=20&m=1169668336&s=170667a&w=0&h=BjhCyH5GH-Llb2KCOV80r5dEEGTmHrrg8reTF-vLX7A="})`,
+    height: "93vh",
     width: "100%",
     align: "center",
     objectFit: "cover",
     boxShadow: 0,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
   },
 };
 export const appbar = {
@@ -30,6 +35,11 @@ export const styleButton = {
     letterSpacing: 0.2,
     fontFamily: "system-ui",
     borderRadius: 0,
+    "&:hover": {
+      background: "grey",
+      color: "white",
+      border: "none",
+    },
   },
 };
 export const bodyOne = {
@@ -78,12 +88,12 @@ export const bodyboxOne = {
   divDecor: {
     display: "flex",
     flexDirection: "row",
-    background: "#1a1aff",
-    width: "35%",
+    background: "#0869a0",
+    width: "55%",
     height: 175,
-    position: "absolute",
-    top: "72rem",
-    right: 230,
+    position: "relative",
+    bottom: 75,
+    left: 350,
   },
   decor: {
     color: "#f2f2f2",
@@ -99,6 +109,7 @@ export const style2 = {
     borderRadius: 0,
     boxShadow: 0,
     mt: 4,
+    objectFit: "cover",
   },
 };
 export const bodyThree = {
@@ -112,7 +123,7 @@ export const bodyThree = {
   two: {
     width: "50%",
     height: 450,
-    objectFit: "fill",
+    objectFit: "cover",
   },
   three: {
     width: "50%",
@@ -180,6 +191,11 @@ export const bodyFour = {
     borderRadius: 0,
     transition: "none",
     webkitTapHighlightColor: "none",
+    "&:hover": {
+      background: "grey",
+      color: "white",
+      border: "none",
+    },
   },
   five: {
     width: "100%",
@@ -259,6 +275,11 @@ export const bodyFive = {
     fontWeight: 700,
     alignItems: "center",
     mt: 2,
+    "&:hover": {
+      background: "grey",
+      color: "white",
+      border: "none",
+    },
   },
   twelve: {
     width: "100%",
@@ -291,6 +312,11 @@ export const bodyFive = {
     fontWeight: 700,
     alignItems: "center",
     mt: 2,
+    "&:hover": {
+      background: "grey",
+      color: "white",
+      border: "none",
+    },
   },
 };
 export const bodySix = {
@@ -443,6 +469,16 @@ export const footer = {
     justifyContent: "center",
   },
   two: {
+    width: "13%",
+    display: "flex",
+    flexDirection: "column",
+    color: "#E0E7E0",
+    mt: 6.5,
+    xs: "none",
+    sm: "flex",
+    md: "flex",
+  },
+  twoTwo: {
     width: "15%",
     display: "flex",
     flexDirection: "column",
@@ -458,6 +494,8 @@ export const footer = {
   },
   four: {
     fontFamily: "system-ui",
+    textAlign: "center",
+    width: 118,
   },
   five: {
     display: "flex",
@@ -469,7 +507,7 @@ export const footer = {
     fontFamily: "system-ui",
     textTransform: "none",
     color: "#E0E7E0",
-    ml: 0,
+    ml: " -16",
     width: 120,
     textAlign: "end",
   },
@@ -479,5 +517,278 @@ export const footer = {
     mt: 2,
     width: 118,
     justifyContent: "center",
+  },
+};
+export const hey = {
+  "a:-webkit-any-link": {
+    color: "#3B312F",
+    cursor: "pointer",
+    textDecoration: "none",
+    paddingTop: 0.1,
+    width: 43,
+    p: 0,
+    m: 0,
+  },
+};
+
+// {
+//   {
+//     {
+//       {
+//         {
+//         }
+//       }
+//     }
+//   }
+// }
+export const mainBodyOne = {
+  one: {
+    backgroundImage: `url(${"https://w7.pngwing.com/pngs/597/406/png-transparent-internet-enterprise-business-background-company-website-banner-corporate-banner-tech-internet.png"})`,
+    height: 450,
+    width: "100%",
+    objectFit: "fill",
+    boxShadow: 0,
+    backgroundRepeat: "no-repeat",
+    display: "flex",
+    textAlign: "center",
+
+    backgroundSize: "cover%",
+  },
+  two: {
+    fontWeight: 900,
+    color: "white",
+    fontFamily: "system-ui",
+    width: "100%",
+    height: 450,
+    paddingTop: "15%",
+  },
+};
+export const mainBodyTwo = {
+  one: {
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    background: "white",
+    pt: 7,
+  },
+  two: {
+    width: 300,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  three: {
+    width: 300,
+    height: 200,
+    objectFit: "cover",
+  },
+  four: {
+    fontSize: 22,
+    fontWeight: 600,
+    color: "#181D18",
+    fontFamily: "system-ui",
+    textAlign: "center",
+    mt: 1.5,
+  },
+  five: {
+    width: "60%",
+    fontSize: 12,
+    fontWeight: 600,
+    color: "#686C68",
+    fontFamily: "system-ui",
+    textAlign: "center",
+    mt: 1.5,
+  },
+};
+export const mainBodyThree = {
+  one: {
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    background: "white",
+    pt: 7,
+    pb: 3,
+    "&.MuiGrid-root": {
+      background: "#DEE6DE",
+    },
+  },
+  two: {
+    width: 500,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  three: {
+    mt: 2,
+    width: 400,
+    height: 400,
+    objectFit: "cover",
+  },
+  threee: {
+    mt: 2,
+    width: 500,
+    height: 300,
+    objectFit: "cover",
+    "&:(min-width:600px)": {
+      width: 20,
+    },
+  },
+  four: {
+    fontSize: 29,
+    width: "65%",
+    fontWeight: 900,
+    color: "#181D18",
+    fontFamily: "system-ui",
+    mt: 1.5,
+    textAlign: "center",
+  },
+  five: {
+    width: "75%",
+    fontSize: 12,
+    fontWeight: 600,
+    color: "#4338BC",
+    fontFamily: "system-ui",
+    textAlign: "center",
+    mt: 1.5,
+  },
+  six: {
+    width: "100%",
+    fontSize: 12,
+    fontWeight: 600,
+    color: "#ABB1B0",
+    fontFamily: "system-ui",
+
+    mt: 4,
+  },
+  seven: {
+    width: "75%",
+    fontSize: 12,
+    fontWeight: 600,
+    color: "red",
+    fontFamily: "system-ui",
+    textAlign: "center",
+    mt: 1.5,
+  },
+};
+
+export const mainBodyFour = {
+  one: {
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    background: "white",
+    pt: 4,
+    pb: 6,
+  },
+  two: {
+    width: 200,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  three: {
+    width: 200,
+    height: 300,
+    objectFit: "cover",
+  },
+  four: {
+    fontSize: 20,
+    fontWeight: 600,
+    color: "#181D18",
+    fontFamily: "system-ui",
+    textAlign: "center",
+    mt: 1.5,
+  },
+  five: {
+    fontSize: 12,
+    fontWeight: 600,
+    color: "#686C68",
+    fontFamily: "system-ui",
+    textAlign: "center",
+    mt: 1,
+  },
+  six: {
+    width: "100%",
+    textAlign: "center",
+    fontFamily: "system-ui",
+    fontSize: 25,
+    pt: 5,
+    background: "white",
+    fontWeight: 600,
+  },
+};
+export const mainBodyFive = {
+  one: {
+    height: "100%",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    background: "white",
+    pt: 3,
+    pb: 7,
+    "&.MuiGrid-root": {
+      background: "#DEE6DE",
+    },
+  },
+  two: {
+    width: 200,
+    height: 380,
+    background: "white",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  three: {
+    width: 200,
+    height: 175,
+    objectFit: "cover",
+  },
+  four: {
+    fontSize: 17,
+    fontWeight: 600,
+    color: "#181D18",
+    fontFamily: "system-ui",
+    textAlign: "center",
+    mt: 1.5,
+    width: "100%",
+  },
+  five: {
+    width: "100%",
+    fontSize: 12,
+    fontWeight: 600,
+    color: "#686C68",
+    fontFamily: "system-ui",
+    textAlign: "center",
+    mt: 1.5,
+  },
+  six: {
+    background: "#3333ff",
+    color: "#ffffff",
+    width: "8rem",
+    height: "2.5rem",
+    mt: "1.5rem",
+    fontSize: "0.7rem",
+    fontWeight: 700,
+    textTransform: "none",
+    letterSpacing: 0.2,
+
+    fontFamily: "system-ui",
+    borderRadius: 0,
+    transition: "none",
+    webkitTapHighlightColor: "none",
+    "&:hover": {
+      background: "grey",
+      color: "white",
+      border: "none",
+    },
+  },
+  seven: {
+    width: "100%",
+    textAlign: "center",
+    fontFamily: "system-ui",
+    fontSize: 25,
+    pt: 5,
+    background: "#DEE6DE",
+    fontWeight: 600,
   },
 };
